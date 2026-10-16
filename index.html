@@ -1,0 +1,952 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Ahmad Mousa Research Profile</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap">
+<style>
+/* Layout concept: the page reads like an ECG strip chart. Grid paper carries the live trace,
+   the lab plot and the result charts; everything else sits on clean paper with a mono margin of real units. */
+:root{
+  --paper:#FBF8F8; --surface:#FFFFFF; --ink:#18202E; --ink-2:#465063; --muted:#757C8C; --rule:#E9DCDD;
+  --grid-minor:rgba(214,92,104,.10); --grid-major:rgba(214,92,104,.25);
+  --carmine:#B3263A; --carmine-soft:rgba(179,38,58,.12); --blue:#24508F; --blue-soft:rgba(36,80,143,.10);
+  --ok:#2E7A4E; --series-b:#7088B8; --series-c:#C3BBBD;
+  --f-display:"Bricolage Grotesque", "Avenir Next", "Segoe UI", system-ui, sans-serif;
+  --f-body:"IBM Plex Sans", "Segoe UI", system-ui, -apple-system, sans-serif;
+  --f-mono:"IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+  --s-1:.8125rem; --s0:1rem; --s1:1.1875rem; --s2:1.5rem; --s3:2.125rem; --s4:clamp(2.5rem,6vw,4.25rem);
+  --radius:6px; --maxw:1120px;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#11141B; --surface:#181C25; --ink:#E8EAF0; --ink-2:#B5BAC7; --muted:#8A92A3; --rule:#2A2F3B;
+  --grid-minor:rgba(255,120,135,.07); --grid-major:rgba(255,120,135,.17);
+  --carmine:#FF7183; --carmine-soft:rgba(255,113,131,.16); --blue:#8FB3F2; --blue-soft:rgba(143,179,242,.14);
+  --ok:#6CC594; --series-b:#6C88C0; --series-c:#4A5060; color-scheme:dark }}
+:root[data-theme="dark"]{
+  --paper:#11141B; --surface:#181C25; --ink:#E8EAF0; --ink-2:#B5BAC7; --muted:#8A92A3; --rule:#2A2F3B;
+  --grid-minor:rgba(255,120,135,.07); --grid-major:rgba(255,120,135,.17);
+  --carmine:#FF7183; --carmine-soft:rgba(255,113,131,.16); --blue:#8FB3F2; --blue-soft:rgba(143,179,242,.14);
+  --ok:#6CC594; --series-b:#6C88C0; --series-c:#4A5060; color-scheme:dark }
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
+body{background:var(--paper);color:var(--ink);font-family:var(--f-body);font-size:var(--s0);line-height:1.6;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--paper)}
+a{color:var(--blue);text-underline-offset:3px}
+a:hover{color:var(--carmine)}
+:focus-visible{outline:2px solid var(--carmine);outline-offset:2px;border-radius:3px}
+.wrap{max-width:var(--maxw);margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+h1,h2,h3{font-family:var(--f-display);text-wrap:balance;margin:0;line-height:1.08;letter-spacing:-.015em}
+h2{font-size:var(--s3);font-weight:700}
+h3{font-size:var(--s2);font-weight:700}
+p{margin:0}
+.mono{font-family:var(--f-mono)}
+.eyebrow{font-family:var(--f-mono);font-size:var(--s-1);letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.prose{max-width:66ch;color:var(--ink-2)}
+.num{font-variant-numeric:tabular-nums}
+
+/* ---------- header ---------- */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--paper) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--rule)}
+.top .wrap{display:flex;align-items:center;gap:20px;padding-block:12px}
+.brand{font-family:var(--f-display);font-weight:700;font-size:1.0625rem;color:var(--ink);text-decoration:none;white-space:nowrap;display:flex;align-items:center;gap:10px}
+.brand svg{flex:none}
+.nav{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none;margin-left:auto;min-width:0}
+.nav::-webkit-scrollbar{display:none}
+.nav a{font-size:.875rem;color:var(--ink-2);text-decoration:none;padding:6px 10px;border-radius:999px;white-space:nowrap}
+.nav a:hover{background:var(--blue-soft);color:var(--ink)}
+.nav a.on{background:var(--ink);color:var(--paper)}
+
+/* ---------- hero ---------- */
+.hero{padding-block:56px 0}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,1fr);gap:48px;align-items:end}
+.hero h1{font-size:var(--s4);font-weight:700;margin:14px 0 18px}
+.lede{font-size:var(--s1);line-height:1.55;max-width:58ch;color:var(--ink)}
+.lede + .lede{margin-top:12px;font-size:var(--s0);color:var(--ink-2)}
+.cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.btn{display:inline-flex;align-items:center;gap:8px;font:500 .9375rem var(--f-body);padding:10px 16px;border-radius:var(--radius);border:1px solid var(--ink);background:var(--ink);color:var(--paper);text-decoration:none;cursor:pointer}
+.btn:hover{background:var(--carmine);border-color:var(--carmine);color:var(--paper)}
+.btn.ghost{background:transparent;color:var(--ink);border-color:var(--rule)}
+.btn.ghost:hover{border-color:var(--ink);color:var(--ink);background:var(--blue-soft)}
+.facts{margin:0;display:grid;gap:14px;border-left:1px solid var(--rule);padding-left:22px}
+.facts div{display:grid;gap:2px}
+.facts dt{font-family:var(--f-mono);font-size:.75rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.facts dd{margin:0;color:var(--ink)}
+
+.strip{margin-top:44px;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);background:var(--surface)}
+.strip-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:8px 18px;padding-block:10px}
+.strip-head .eyebrow b{color:var(--carmine);font-weight:500}
+.live-dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--carmine);margin-right:8px;vertical-align:1px;animation:pulse 1.6s infinite}
+.paused .live-dot{animation:none;background:var(--muted)}
+@keyframes pulse{50%{opacity:.25}}
+@media (prefers-reduced-motion: reduce){.live-dot{animation:none}}
+.icon-btn{font:500 .8125rem var(--f-mono);background:transparent;color:var(--ink-2);border:1px solid var(--rule);border-radius:999px;padding:4px 12px;cursor:pointer}
+.icon-btn:hover{border-color:var(--ink);color:var(--ink)}
+#ecg{display:block;width:100%;height:230px}
+.readouts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;border-top:1px solid var(--rule)}
+.readouts div{padding:12px 16px 14px 0;display:grid;gap:2px}
+.readouts div + div{padding-left:16px;border-left:1px solid var(--rule)}
+.readouts .v{font-family:var(--f-mono);font-size:1.25rem;font-variant-numeric:tabular-nums;color:var(--ink)}
+.readouts .k{font-size:.8125rem;color:var(--muted);line-height:1.35}
+.strip-note{font-size:.8125rem;color:var(--muted);padding-block:0 14px;max-width:80ch}
+
+/* ---------- sections ---------- */
+section.block{padding-block:88px 0}
+.sec-head{display:grid;gap:12px;margin-bottom:36px}
+.sec-head .prose{font-size:var(--s1)}
+
+/* research timeline */
+.stages{display:grid;gap:0;border-top:1px solid var(--rule)}
+.stage{display:grid;grid-template-columns:150px minmax(0,1fr);gap:32px;padding-block:36px;border-bottom:1px solid var(--rule)}
+.stage-meta{display:grid;align-content:start;gap:6px}
+.stage-num{font-family:var(--f-display);font-size:2.75rem;font-weight:700;line-height:1;color:var(--carmine)}
+.stage-body{display:grid;gap:18px;min-width:0}
+.stage-body > p{max-width:68ch;color:var(--ink-2)}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px}
+.stat{padding:12px 14px;border:1px solid var(--rule);border-radius:var(--radius);background:var(--surface);display:grid;gap:2px}
+.stat .v{font-family:var(--f-display);font-weight:700;font-size:1.625rem;line-height:1.1;font-variant-numeric:tabular-nums}
+.stat .k{font-size:.8125rem;color:var(--muted);line-height:1.35}
+.pubtags{display:flex;flex-wrap:wrap;gap:8px}
+.tag{font-family:var(--f-mono);font-size:.75rem;padding:3px 9px;border-radius:999px;border:1px solid var(--rule);color:var(--ink-2);background:var(--surface)}
+.tag.red{border-color:transparent;background:var(--carmine-soft);color:var(--carmine)}
+.tag.blue{border-color:transparent;background:var(--blue-soft);color:var(--blue)}
+.charts{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:16px}
+.chart{border:1px solid var(--rule);border-radius:var(--radius);background:var(--surface);padding:14px 14px 10px;min-width:0}
+.chart h4{margin:0 0 2px;font:600 .9375rem var(--f-body)}
+.chart .sub{font-size:.8125rem;color:var(--muted);margin-bottom:8px}
+.chart svg{display:block;width:100%;height:auto}
+.legend{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:.8125rem;color:var(--ink-2);margin-top:6px}
+.legend i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:6px;vertical-align:-1px}
+.callout{border-left:3px solid var(--carmine);padding:4px 0 4px 14px;color:var(--ink-2);max-width:68ch;font-size:.9375rem}
+.pipe{display:flex;flex-wrap:wrap;gap:6px;align-items:stretch}
+.pipe .step{flex:1 1 130px;min-width:0;padding:10px 12px;border:1px solid var(--rule);border-radius:var(--radius);background:var(--surface);font-size:.8125rem;line-height:1.35}
+.pipe .step b{display:block;font-family:var(--f-mono);font-weight:500;font-size:.6875rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-bottom:3px}
+.pipe .step.hot{border-color:var(--carmine);background:var(--carmine-soft)}
+.pipe .step.hot b{color:var(--carmine)}
+.links{display:flex;flex-wrap:wrap;gap:8px 18px;font-size:.9375rem}
+
+.earlier{margin-top:48px}
+.earlier h3{font-size:var(--s1);margin-bottom:16px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr));gap:14px}
+.card{padding:16px;border:1px solid var(--rule);border-radius:var(--radius);background:var(--surface);display:grid;gap:8px;align-content:start}
+.card h4{margin:0;font:600 1rem var(--f-body);line-height:1.3}
+.card p{font-size:.9rem;color:var(--ink-2)}
+.card .eyebrow{font-size:.6875rem}
+
+/* ---------- lab ---------- */
+.lab{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:20px;align-items:start}
+.panel{border:1px solid var(--rule);border-radius:var(--radius);background:var(--surface);padding:16px;min-width:0}
+.controls{display:grid;gap:16px;margin-bottom:14px}
+.seg{display:flex;flex-wrap:wrap;gap:6px}
+.seg button{font:500 .875rem var(--f-body);padding:7px 12px;border-radius:999px;border:1px solid var(--rule);background:var(--paper);color:var(--ink-2);cursor:pointer}
+.seg button:hover{border-color:var(--ink);color:var(--ink)}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.row{display:flex;flex-wrap:wrap;gap:14px 24px;align-items:center}
+.slider{display:grid;gap:4px;flex:1 1 200px;min-width:0}
+.slider label{display:flex;justify-content:space-between;font-size:.8125rem;color:var(--ink-2)}
+.slider output{font-family:var(--f-mono);color:var(--ink)}
+input[type=range]{width:100%;accent-color:var(--carmine)}
+.check{display:flex;align-items:center;gap:8px;font-size:.875rem;color:var(--ink-2);cursor:pointer}
+.check input{accent-color:var(--carmine);width:16px;height:16px}
+#beatplot{display:block;width:100%;height:auto;border-radius:4px}
+.plot-legend{display:flex;flex-wrap:wrap;gap:4px 16px;font-size:.8125rem;color:var(--ink-2);margin-top:8px}
+.plot-legend span{display:inline-flex;align-items:center;gap:6px}
+.sw{width:18px;height:0;border-top:2px solid var(--ink);display:inline-block}
+.sw.dash{border-top:2px dashed var(--blue)}
+.sw.box{height:10px;border:0;background:var(--carmine-soft);border-left:2px solid var(--carmine)}
+.verdicts{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:14px}
+.verdict{padding:12px;border-radius:var(--radius);border:1px solid var(--rule);display:grid;gap:4px;align-content:start}
+.verdict .eyebrow{font-size:.6875rem}
+.verdict .state{font:700 1.125rem var(--f-display)}
+.verdict .detail{font-size:.8125rem;color:var(--ink-2);line-height:1.4}
+.verdict.flag{border-color:var(--carmine);background:var(--carmine-soft)}
+.verdict.flag .state{color:var(--carmine)}
+.verdict.pass .state{color:var(--ok)}
+.bars{display:grid;gap:7px}
+.bar{display:grid;grid-template-columns:62px minmax(0,1fr) 58px;gap:10px;align-items:center;font-size:.8125rem}
+.bar .lbl{font-family:var(--f-mono);color:var(--ink-2)}
+.bar .lbl small{color:var(--muted)}
+.track{position:relative;height:16px;background:var(--paper);border-radius:3px;overflow:hidden}
+.fill{position:absolute;inset:0 auto 0 0;background:var(--series-c);border-radius:3px;transition:width .25s ease}
+.fill.over{background:var(--carmine)}
+.fill.loc{box-shadow:inset 0 0 0 2px var(--ink)}
+@media (prefers-reduced-motion: reduce){.fill{transition:none}}
+.thr{position:absolute;top:-2px;bottom:-2px;width:2px;background:var(--ink)}
+.bar .z{font-family:var(--f-mono);text-align:right;font-variant-numeric:tabular-nums;color:var(--ink)}
+.axis{display:grid;grid-template-columns:62px minmax(0,1fr) 58px;gap:10px;font-family:var(--f-mono);font-size:.6875rem;color:var(--muted)}
+.axis .ticks{position:relative;height:14px}
+.axis .ticks span{position:absolute;transform:translateX(-50%)}
+.axis .ticks span:first-child{transform:none}
+.fa{margin-top:14px;padding-top:12px;border-top:1px solid var(--rule);font-size:.8125rem;color:var(--ink-2);display:grid;gap:4px}
+.try{margin-top:16px;display:grid;gap:8px}
+.try h4{margin:0;font:600 .9375rem var(--f-body)}
+.try ul{margin:0;padding-left:18px;color:var(--ink-2);font-size:.9rem;display:grid;gap:6px}
+.try button.link{font:inherit;color:var(--blue);background:none;border:0;padding:0;cursor:pointer;text-decoration:underline;text-underline-offset:3px}
+
+/* ---------- publications ---------- */
+.filters{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:18px}
+.pubs{list-style:none;margin:0;padding:0;border-top:1px solid var(--rule)}
+.pub{display:grid;grid-template-columns:70px minmax(0,1fr) auto;gap:20px;padding-block:18px;border-bottom:1px solid var(--rule);align-items:start}
+.pub .yr{font-family:var(--f-mono);font-size:.9375rem;color:var(--muted);padding-top:2px}
+.pub .t{font-weight:600;line-height:1.4;color:var(--ink)}
+.pub .a{font-size:.9rem;color:var(--ink-2);margin-top:3px}
+.pub .a b{font-weight:600;color:var(--ink)}
+.pub .v{font-size:.9rem;color:var(--ink-2);font-style:italic}
+.pub .meta{display:flex;flex-wrap:wrap;gap:8px 14px;margin-top:8px;align-items:center;font-size:.875rem}
+.pub .acts{display:flex;gap:6px}
+
+/* ---------- experience ---------- */
+.xp{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:48px;align-items:start}
+.tl{list-style:none;margin:0;padding:0;border-left:1px solid var(--rule)}
+.tl li{position:relative;padding:0 0 26px 24px}
+.tl li::before{content:"";position:absolute;left:-5px;top:7px;width:9px;height:9px;border-radius:50%;background:var(--paper);border:2px solid var(--carmine)}
+.tl li.now::before{background:var(--carmine)}
+.tl .when{font-family:var(--f-mono);font-size:.8125rem;color:var(--muted)}
+.tl h4{margin:2px 0 0;font:600 1.0625rem var(--f-body);line-height:1.35}
+.tl .org{color:var(--ink-2);font-size:.9375rem}
+.tl details{margin-top:8px}
+.tl summary{cursor:pointer;font-size:.875rem;color:var(--blue);width:max-content;max-width:100%}
+.tl summary:hover{color:var(--carmine)}
+.tl details ul{margin:8px 0 0;padding-left:18px;color:var(--ink-2);font-size:.9rem;display:grid;gap:5px}
+.side{display:grid;gap:28px}
+.side h3{font-size:var(--s1);margin-bottom:12px}
+.edu{list-style:none;margin:0;padding:0;display:grid;gap:14px}
+.edu li{display:grid;gap:1px}
+.edu .deg{font-weight:600}
+.edu .sch{font-size:.9rem;color:var(--ink-2)}
+.edu .when{font-family:var(--f-mono);font-size:.8125rem;color:var(--muted)}
+.teach{list-style:none;margin:0;padding:0;display:grid;gap:10px;font-size:.9375rem}
+.teach li{display:grid;gap:1px}
+.teach span{font-size:.875rem;color:var(--ink-2)}
+
+/* ---------- skills ---------- */
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:26px 32px}
+.skill h4{margin:0 0 10px;font:600 .9375rem var(--f-body);padding-bottom:8px;border-bottom:1px solid var(--rule)}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{font-size:.8125rem;padding:4px 10px;border-radius:999px;background:var(--surface);border:1px solid var(--rule);color:var(--ink-2)}
+
+/* ---------- contact ---------- */
+.contact{margin-top:88px;background:var(--surface);border-top:1px solid var(--rule)}
+.contact .wrap{padding-block:56px 64px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px;align-items:start}
+.contact h2{font-size:var(--s3)}
+.contact .prose{margin-top:12px}
+.clist{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.clist li{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 12px;padding:12px 14px;border:1px solid var(--rule);border-radius:var(--radius);background:var(--paper)}
+.clist .lbl{font-family:var(--f-mono);font-size:.75rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);display:block}
+.clist .val{font-family:var(--f-mono);font-size:.9375rem;color:var(--ink);user-select:all;word-break:break-all}
+.foot{font-size:.8125rem;color:var(--muted);padding-block:18px;border-top:1px solid var(--rule)}
+
+.toast{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--ink);color:var(--paper);padding:9px 16px;border-radius:999px;font-size:.875rem;z-index:50}
+
+@media (max-width:900px){
+  .hero-grid,.lab,.xp,.contact .wrap{grid-template-columns:minmax(0,1fr)}
+  .facts{border-left:0;padding-left:0;border-top:1px solid var(--rule);padding-top:18px;grid-template-columns:1fr 1fr}
+  .stage{grid-template-columns:minmax(0,1fr);gap:14px}
+  .stage-meta{grid-template-columns:auto 1fr;align-items:baseline;gap:4px 14px}
+  .stage-meta .eyebrow{grid-column:2}
+}
+@media (max-width:600px){
+  .hero{padding-block:36px 0}
+  .brand span{display:none}
+  .readouts{grid-template-columns:1fr 1fr}
+  .readouts div:nth-child(3){padding-left:0;border-left:0}
+  .readouts div:nth-child(n+3){border-top:1px solid var(--rule)}
+  .facts{grid-template-columns:1fr}
+  .verdicts{grid-template-columns:1fr}
+  .pub{grid-template-columns:minmax(0,1fr);gap:6px}
+  #ecg{height:190px}
+  section.block{padding-block:64px 0}
+}
+</style>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Ahmad Mousa, back to top">
+      <svg width="30" height="18" viewBox="0 0 30 18" aria-hidden="true"><path d="M0 11h7l2-3 2 3h2l1.5 2 2-12 2.5 16 1.5-6h2c1.5-3 3.5-3 5 0h2" fill="none" stroke="var(--carmine)" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/></svg>
+      <span>Ahmad Mousa</span>
+    </a>
+    <nav class="nav" aria-label="Sections">
+      <a href="#research">Research</a>
+      <a href="#demo">Live demo</a>
+      <a href="#publications">Publications</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="eyebrow">PhD Candidate · Electrical &amp; Computer Engineering · Ontario Tech University</p>
+        <h1>Ahmad Mousa</h1>
+        <p class="lede">I build ECG analysis that a clinician can read and a wearable can run. My research models each heartbeat as five Gaussian waves, flags beats that drift from normal, and names the wave responsible, in milliseconds on edge hardware.</p>
+        <p class="lede">Embedded systems engineer with 6+ years across real-time monitoring, IoT and machine learning, and an instructor in data analytics and SQL.</p>
+        <div class="cta">
+          <a class="btn" href="#demo">Try the detector</a>
+          <a class="btn ghost" href="#research">Read the research</a>
+          <a class="btn ghost" href="#publications">Publications</a>
+        </div>
+      </div>
+      <dl class="facts">
+        <div><dt>Lab</dt><dd>IoT Research Laboratory, Ontario Tech</dd></div>
+        <div><dt>Supervisor</dt><dd>Prof. Khalid Elgazzar</dd></div>
+        <div><dt>Focus</dt><dd>Interpretable, edge-deployable ECG anomaly detection and localization</dd></div>
+        <div><dt>Based in</dt><dd>Oshawa, Ontario, Canada</dd></div>
+      </dl>
+    </div>
+
+    <div class="strip" id="strip">
+      <div class="wrap strip-head">
+        <p class="eyebrow"><span class="live-dot" aria-hidden="true"></span>Live monitor · simulated lead II · <b>25 mm/s · 10 mm/mV</b></p>
+        <button class="icon-btn" id="playBtn" type="button" aria-pressed="false">Pause</button>
+      </div>
+      <canvas id="ecg" aria-label="Scrolling simulated ECG. Abnormal beats are shaded over the waveform component the detector blamed."></canvas>
+      <div class="wrap">
+        <div class="readouts" aria-live="off">
+          <div><span class="v" id="rBeats">0</span><span class="k">beats analysed</span></div>
+          <div><span class="v" id="rFlag">0</span><span class="k">flagged as abnormal</span></div>
+          <div><span class="v" id="rLast">none yet</span><span class="k">last flag: true class → blamed window</span></div>
+          <div><span class="v" id="rMs">–</span><span class="k">mean compute per beat, measured in this browser</span></div>
+        </div>
+        <p class="strip-note">Beats are synthesized here from the five-Gaussian model and scored by the component-local engine described below. About one beat in seven carries an injected abnormality. The shaded band marks the component the engine blamed; the letters under the trace are the true class.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESEARCH -->
+  <section class="block" id="research">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">Research · 2021 to present</p>
+        <h2>From fewer leads to explainable beats</h2>
+        <p class="prose">Each project answered the question the previous one left open. The thread running through all of them: cardiac monitoring that is cheap enough for a wearable and transparent enough for a clinician to check.</p>
+      </div>
+
+      <div class="stages">
+        <!-- Stage 1 -->
+        <article class="stage">
+          <div class="stage-meta"><span class="stage-num">1</span><span class="eyebrow">2021–2023 · MASc</span></div>
+          <div class="stage-body">
+            <h3>Fewer leads, same diagnosis</h3>
+            <p>The MASc work asked how much of a 12-lead ECG a wearable actually needs. It showed that a carefully selected six-lead subset keeps most of the diagnostic information while cutting sampling time by over 90% at negligible accuracy loss. Selective lead integration then tuned that accuracy-to-cost trade-off, and CardioDiverse, a balanced dataset, linked heart diseases to the leads most relevant to them.</p>
+            <div class="pubtags">
+              <span class="tag blue">IEEE GCAIoT 2023 · Six Leads Are All You Need</span>
+              <span class="tag blue">IEEE WF-IoT 2023 · Selective Lead Integration</span>
+              <span class="tag blue">IEEE GCAIoT 2023 · CardioDiverse</span>
+              <span class="tag">MASc thesis, 2023</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Stage 2 -->
+        <article class="stage">
+          <div class="stage-meta"><span class="stage-num">2</span><span class="eyebrow">2026 · IEEE SOCC</span></div>
+          <div class="stage-body">
+            <h3>A five-Gaussian template for the edge</h3>
+            <p>Each beat is modeled with five Gaussians, one per P, Q, R, S and T deflection. A median template built from normal beats is subtracted from every new beat, and the Sparsity Ratio (residual energy over beat energy) flags departures. A drift gate refits the template only after three consecutive drift crossings, so the model follows slow physiological change without learning the anomalies it is meant to catch. No labels are needed at deployment.</p>
+            <div class="stats">
+              <div class="stat"><span class="v">0.98</span><span class="k">F1, MIT-BIH Arrhythmia</span></div>
+              <div class="stat"><span class="v">0.91</span><span class="k">F1, European ST-T</span></div>
+              <div class="stat"><span class="v">≈0.01 ms</span><span class="k">per beat on a Raspberry Pi 4B</span></div>
+              <div class="stat"><span class="v">3,197 → 2</span><span class="k">template refits, without vs. with the drift gate</span></div>
+            </div>
+            <div class="charts">
+              <figure class="chart" style="margin:0">
+                <h4>Anomaly-class F1 against baselines</h4>
+                <p class="sub">Held-out records, same label-free calibration budget (paper Table V)</p>
+                <div id="chSocc"></div>
+                <div class="legend"><span><i style="background:var(--carmine)"></i>Gaussian template</span><span><i style="background:var(--series-b)"></i>LSTM autoencoder</span><span><i style="background:var(--series-c)"></i>RBF SVM</span></div>
+              </figure>
+              <figure class="chart" style="margin:0">
+                <h4>Per-beat latency on Raspberry Pi 4B</h4>
+                <p class="sub">Log scale, end-to-end measured (paper Table VI)</p>
+                <div id="chLat"></div>
+              </figure>
+            </div>
+            <p class="callout">The weak spot was SVDB (F1 0.47). The QRS complex holds roughly 90% of beat energy, so a distorted P wave barely moves a whole-beat ratio. That limitation set up the next paper.</p>
+            <div class="links">
+              <a href="https://ahmadammar972.github.io/A-Low-Latency-Gaussian-Template-Framework-for-Real-Time-ECG-Anomaly-Detection-on-Edge-Devices/" target="_blank" rel="noopener">Interactive paper companion ↗</a>
+              <a href="#demo">See the masking effect in the demo</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Stage 3 -->
+        <article class="stage">
+          <div class="stage-meta"><span class="stage-num">3</span><span class="eyebrow">2026 · Journal manuscript</span></div>
+          <div class="stage-body">
+            <h3>Component-local scoring: detect the abnormal beat and name the wave</h3>
+            <p>The fix is in the denominator. Each component is scored against its own template window and normalized by that window's energy, so a P-wave distortion counts in full even when the QRS is untouched. A beat is flagged if any of six tests (the full beat plus five components) crosses its normal-only threshold, and the component with the largest standardized deviation localizes the abnormality. There is no trained classifier and no abnormal label anywhere in the pipeline. The statistic is shown to equal the matched-subspace residual plus a gain-mismatch penalty, and the union rule comes with a distribution-free per-test false-alarm bound.</p>
+
+            <div class="pipe" aria-label="Pipeline">
+              <div class="step"><b>Offline</b>Median of normal training beats</div>
+              <div class="step"><b>Offline</b>Five-Gaussian fit, soft windows</div>
+              <div class="step"><b>Offline</b>Six templates and thresholds θ = m + 3s</div>
+              <div class="step"><b>Per beat</b>Filter, refine R-peak, align</div>
+              <div class="step hot"><b>Per beat</b>Component-local NSE in each window</div>
+              <div class="step hot"><b>Decision</b>Any test above θ → flag; max z → which wave</div>
+            </div>
+
+            <div class="stats">
+              <div class="stat"><span class="v">0.68 · 0.74 · 0.79</span><span class="k">macro-F1 on MITDB, EDB, SVDB (5-fold, record-wise)</span></div>
+              <div class="stat"><span class="v">72.5%</span><span class="k">localization agreement vs. 40% chance, p = 2.3×10⁻⁴³</span></div>
+              <div class="stat"><span class="v">&lt; 2 ms</span><span class="k">per beat on a commodity laptop CPU</span></div>
+              <div class="stat"><span class="v">&lt; 30 KB</span><span class="k">complete template bank</span></div>
+            </div>
+
+            <div class="charts">
+              <figure class="chart" style="margin:0">
+                <h4>Macro-F1 against classical baselines</h4>
+                <p class="sub">Mean over five folds; baselines saw abnormal labels, the engine did not</p>
+                <div id="chJbhi"></div>
+                <div class="legend"><span><i style="background:var(--carmine)"></i>Component-local engine</span><span><i style="background:var(--series-b)"></i>Baseline A: global template</span><span><i style="background:var(--series-c)"></i>Baseline B: features + logistic regression</span></div>
+              </figure>
+              <figure class="chart" style="margin:0">
+                <h4>Which wave gets blamed</h4>
+                <p class="sub">Row-normalized localization, pooled over three databases</p>
+                <div id="chConf"></div>
+              </figure>
+            </div>
+            <p class="callout">SVDB, the weakest database for whole-beat scoring, becomes the strongest by macro-F1. Supraventricular beats land on the P or R window in 70% of cases, ventricular beats on R or S in 75%.</p>
+            <div class="pubtags">
+              <span class="tag red">Prepared for IEEE Journal of Biomedical and Health Informatics</span>
+              <span class="tag">Leakage-safe record-wise evaluation</span>
+              <span class="tag">PhysioNet MITDB · EDB · SVDB</span>
+            </div>
+            <p class="prose" style="font-size:.9375rem"><strong style="color:var(--ink)">Next:</strong> extending the component engine to reduced-lead and 12-lead recordings, with rate-adaptive windows and millisecond-domain constraints.</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="earlier">
+        <h3>Earlier projects</h3>
+        <div class="cards">
+          <div class="card">
+            <span class="eyebrow">IEEE Sensors Journal · 2021</span>
+            <h4>Blood glucose monitoring and smart insulin prediction</h4>
+            <p>An artificial-pancreas model that estimates insulin needs from continuous glucose readings with LSTM time-series forecasting, backed by Azure IoT Hub and clinician dashboards.</p>
+          </div>
+          <div class="card">
+            <span class="eyebrow">Technologies · 2023</span>
+            <h4>HAIS: Highways Automated-Inspection System</h4>
+            <p>Road-condition tracking with IoT protocols and real-time data processing, using AWS IoT Core and GraphQL APIs for transportation analytics.</p>
+          </div>
+          <div class="card">
+            <span class="eyebrow">Yarmouk University · 2017–2018</span>
+            <h4>Computer vision for autonomous vehicles</h4>
+            <p>Obstacle detection and road following with OpenCV and deep learning, streaming vehicle telemetry over MQTT and Kafka to a control room.</p>
+          </div>
+          <div class="card">
+            <span class="eyebrow">Industry · 2018–2021</span>
+            <h4>Predictive maintenance for industrial IoT</h4>
+            <p>CNN and LSTM anomaly detection for industrial systems, fed by Kafka and PySpark pipelines and deployed with Docker and Kubernetes.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEMO -->
+  <section class="block" id="demo">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">Interactive · runs entirely in your browser</p>
+        <h2>Try the detector on a single beat</h2>
+        <p class="prose">This is a compact reimplementation of the six-template engine. It builds a median template from 240 simulated normal beats, fits the five Gaussian windows, and calibrates every threshold from normal data only. Pick an abnormality, push the severity, and compare the whole-beat score with the component-local scores.</p>
+      </div>
+
+      <div class="lab">
+        <div class="panel">
+          <div class="controls">
+            <div class="seg" role="group" aria-label="Beat type" id="typeSeg">
+              <button type="button" data-t="N" aria-pressed="false">Normal</button>
+              <button type="button" data-t="S" aria-pressed="true">Supraventricular (P wave)</button>
+              <button type="button" data-t="V" aria-pressed="false">Ventricular (wide QRS)</button>
+              <button type="button" data-t="T" aria-pressed="false">Repolarization (T wave)</button>
+            </div>
+            <div class="row">
+              <div class="slider"><label for="sev">Severity <output id="sevOut">30%</output></label><input id="sev" type="range" min="0" max="1" step="0.05" value="0.3"></div>
+              <div class="slider"><label for="cMul">Threshold multiplier c <output id="cOut">3.0</output></label><input id="cMul" type="range" min="1" max="5" step="0.5" value="3"></div>
+            </div>
+            <div class="row">
+              <button class="icon-btn" id="newBeat" type="button">Draw a new beat</button>
+              <label class="check"><input type="checkbox" id="showG"> Show the five Gaussian components</label>
+            </div>
+          </div>
+          <svg id="beatplot" viewBox="0 0 640 280" role="img" aria-label="Test beat overlaid on the normal template"></svg>
+          <div class="plot-legend">
+            <span><i class="sw"></i>test beat</span>
+            <span><i class="sw dash"></i>normal template</span>
+            <span><i class="sw box"></i>window the engine blamed</span>
+          </div>
+        </div>
+
+        <div class="panel">
+          <div class="verdicts">
+            <div class="verdict" id="vGlobal">
+              <span class="eyebrow">Whole-beat ratio only</span>
+              <span class="state">–</span><span class="detail">–</span>
+            </div>
+            <div class="verdict" id="vLocal">
+              <span class="eyebrow">Component-local engine</span>
+              <span class="state">–</span><span class="detail">–</span>
+            </div>
+          </div>
+          <p class="eyebrow" style="margin-bottom:8px">Standardized deviation z per test · log scale</p>
+          <div class="bars" id="bars"></div>
+          <div class="axis" aria-hidden="true"><span></span><div class="ticks" id="ticks"></div><span></span></div>
+          <div class="fa" id="fa"></div>
+          <div class="try">
+            <h4>Things to try</h4>
+            <ul>
+              <li><button class="link" type="button" data-preset="S,0.3">Supraventricular at 30%</button>: the whole-beat score stays inside its normal band while the P window jumps far past its threshold. This is the energy-dilution problem from the SOCC paper.</li>
+              <li><button class="link" type="button" data-preset="V,0.5">Ventricular at 50%</button>: the widened QRS lights up Q, R and S. Push it to 100% and the T window starts to win, the T-wave over-attribution mode the manuscript reports.</li>
+              <li><button class="link" type="button" data-preset="N,0">Normal beats at c = 1.5</button>: lowering c trades false alarms for sensitivity. Watch the simulated false-alarm rate climb.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PUBLICATIONS -->
+  <section class="block" id="publications">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow" id="pubCount">Publications</p>
+        <h2>Papers, thesis and manuscripts</h2>
+      </div>
+      <div class="seg filters" role="group" aria-label="Filter publications" id="pubFilter">
+        <button type="button" data-f="all" aria-pressed="true">All</button>
+        <button type="button" data-f="journal" aria-pressed="false">Journal</button>
+        <button type="button" data-f="conference" aria-pressed="false">Conference</button>
+        <button type="button" data-f="thesis" aria-pressed="false">Thesis</button>
+        <button type="button" data-f="manuscript" aria-pressed="false">Manuscript</button>
+      </div>
+      <ol class="pubs" id="pubs"></ol>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="block" id="experience">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">Experience · 2017 to present</p>
+        <h2>Research, engineering and teaching</h2>
+      </div>
+      <div class="xp">
+        <ol class="tl">
+          <li class="now">
+            <span class="when">Sep 2024 – present</span>
+            <h4>PhD Candidate, Electrical and Computer Engineering</h4>
+            <p class="org">IoT Research Laboratory, Ontario Tech University</p>
+            <details><summary>Details</summary><ul>
+              <li>Interpretable Gaussian decomposition frameworks for ECG anomaly detection, localization and compression.</li>
+              <li>Edge deployment: sub-2 ms inference and template banks under 30 KB; Raspberry Pi 4B benchmarking.</li>
+              <li>Leakage-safe, record-wise evaluation on PhysioNet databases with formal false-alarm analysis.</li>
+            </ul></details>
+          </li>
+          <li class="now">
+            <span class="when">Dec 2022 – present</span>
+            <h4>Boot Camp Instructor, Data Visualization and Analytics</h4>
+            <p class="org">Vanderbilt University (2U / edX boot camps)</p>
+            <details><summary>Details</summary><ul>
+              <li>Lectures and labs on Python, JavaScript, SQL and Excel, with Pandas, NumPy and pivot-table workflows.</li>
+              <li>Workshops on Tableau, Power BI, Plotly, Seaborn and Matplotlib.</li>
+              <li>Databases and big data: MySQL, Postgres, MongoDB, Spark, Hadoop and Hive; ETL with Talend and NiFi.</li>
+              <li>Machine learning with scikit-learn, PyTorch and Keras; deployment on AWS, GCP, Azure and Databricks.</li>
+              <li>Project mentoring and career guidance for analytics roles.</li>
+            </ul></details>
+          </li>
+          <li>
+            <span class="when">Sep 2021 – Aug 2023</span>
+            <h4>Research Assistant and Teaching Assistant</h4>
+            <p class="org">Faculty of Engineering and Applied Science, Ontario Tech University</p>
+            <details><summary>Details</summary><ul>
+              <li>Real-time ECG monitoring systems in C++, Python and MATLAB for unattended environments.</li>
+              <li>Distributed IoT messaging with MQTT and Kafka; containerized deployment with Docker.</li>
+              <li>Road-tracking system with AWS IoT Core and GraphQL APIs; storage on Postgres and Firebase.</li>
+              <li>LSTM-based ECG anomaly detection, feature engineering and clustering (K-means, DBSCAN).</li>
+              <li>Lab sessions in Python, C++ and SQL for undergraduate students.</li>
+            </ul></details>
+          </li>
+          <li>
+            <span class="when">Jul 2018 – Sep 2021</span>
+            <h4>Data Engineer</h4>
+            <p class="org">Solution Development Kit, Department of Artificial Intelligence, Yarmouk University</p>
+            <details><summary>Details</summary><ul>
+              <li>Led embedded systems for real-time industrial applications in C++, Python and MATLAB under tight resource limits.</li>
+              <li>CNN, RNN and LSTM models for predictive maintenance and anomaly detection.</li>
+              <li>Real-time sensor pipelines with Kafka and PySpark; Docker and Kubernetes orchestration.</li>
+              <li>Database design on Postgres, MySQL and MongoDB; automated ETL with Talend and Informatica.</li>
+            </ul></details>
+          </li>
+          <li>
+            <span class="when">Aug 2017 – Oct 2018</span>
+            <h4>Research Assistant</h4>
+            <p class="org">Department of Electronics Engineering, Yarmouk University</p>
+            <details><summary>Details</summary><ul>
+              <li>Computer vision for obstacle detection and road following in autonomous vehicles.</li>
+              <li>Real-time conference presenter tracking with CNNs and RNNs in TensorFlow and Keras.</li>
+              <li>Artificial pancreas: LSTM insulin prediction from continuous glucose monitoring data.</li>
+            </ul></details>
+          </li>
+        </ol>
+
+        <div class="side">
+          <div>
+            <h3>Education</h3>
+            <ul class="edu">
+              <li><span class="deg">PhD, Electrical and Computer Engineering</span><span class="sch">Ontario Tech University, Oshawa</span><span class="when">2024 – present</span></li>
+              <li><span class="deg">MASc, Electrical and Computer Engineering</span><span class="sch">Ontario Tech University, Oshawa</span><span class="when">2021 – 2023</span></li>
+              <li><span class="deg">BEng, Electronics Engineering</span><span class="sch">Yarmouk University, Irbid, Jordan</span><span class="when">2016 – 2021</span></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Teaching</h3>
+            <ul class="teach">
+              <li>Vanderbilt University boot camps<span>Data visualization and analytics</span></li>
+              <li>Metro College of Technology<span>Data analytics, Excel/VBA and SQL</span></li>
+              <li>CIMT College<span>Advanced SQL</span></li>
+              <li>Ontario Tech University<span>Teaching assistant, programming and microprocessor labs</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="block" id="skills">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">Skills</p>
+        <h2>Toolkit</h2>
+      </div>
+      <div class="skills" id="skillGrid"></div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">Contact</p>
+        <h2 style="margin-top:12px">Get in touch</h2>
+        <p class="prose">Open to research collaborations on interpretable biosignal analysis and edge AI, and to embedded systems and data roles.</p>
+        <div class="links" style="margin-top:18px">
+          <a href="https://github.com/ahmadammar972" target="_blank" rel="noopener">GitHub ↗</a>
+          <a href="https://ahmadammar972.github.io/A-Low-Latency-Gaussian-Template-Framework-for-Real-Time-ECG-Anomaly-Detection-on-Edge-Devices/" target="_blank" rel="noopener">SOCC paper companion ↗</a>
+          <a href="https://scholar.google.com/scholar?q=%22Ahmad+Mousa%22+Elgazzar+ECG" target="_blank" rel="noopener">Google Scholar search ↗</a>
+        </div>
+      </div>
+      <ul class="clist">
+        <li><div><span class="lbl">Academic email</span><span class="val" id="c1">ahmad.mousa@ontariotechu.ca</span></div><button class="icon-btn" type="button" data-copy="c1">Copy</button></li>
+        <li><div><span class="lbl">Teaching email</span><span class="val" id="c2">amousa@instructors.2u.com</span></div><button class="icon-btn" type="button" data-copy="c2">Copy</button></li>
+        <li><div><span class="lbl">Phone</span><span class="val" id="c3">+1 (647) 679-9167</span></div><button class="icon-btn" type="button" data-copy="c3">Copy</button></li>
+      </ul>
+    </div>
+    <div class="wrap foot">Results on this page are taken from the papers cited. The live monitor and the beat lab use simulated signals, not patient data.</div>
+  </section>
+</main>
+<div class="toast" id="toast" hidden></div>
+
+<script>
+(function(){
+"use strict";
+/* ===================== Engine ===================== */
+const L=288, FS=360, NAMES=['P','Q','R','S','T'], KS=['PQRST','P','Q','R','S','T'];
+const BASE={P:{A:0.16,mu:72,s:11},Q:{A:-0.14,mu:131,s:4.5},R:{A:1.30,mu:144,s:5},S:{A:-0.32,mu:157,s:5},T:{A:0.34,mu:222,s:19}};
+function mulberry(seed){return function(){seed|=0;seed=seed+0x6D2B79F5|0;let t=Math.imul(seed^seed>>>15,1|seed);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296;}}
+let rnd=mulberry(7);
+function gauss(){let u=0,v=0;while(!u)u=rnd();while(!v)v=rnd();return Math.sqrt(-2*Math.log(u))*Math.cos(2*Math.PI*v);}
+function clone(p){const o={};for(const k of NAMES)o[k]={...p[k]};return o;}
+function jitter(p,amt){amt=amt??1;const o=clone(p);for(const k of NAMES){o[k].A*=1+0.07*amt*gauss();o[k].mu+=(k==='P'||k==='T'?1.6:0.6)*amt*gauss();o[k].s*=1+0.06*amt*gauss();}const sh=2*gauss();for(const k of NAMES)o[k].mu+=sh;return o;}
+function synth(p,noise){noise=noise??0.008;const b=new Float64Array(L);for(let n=0;n<L;n++){let v=0;for(const k of NAMES){const g=p[k];v+=g.A*Math.exp(-((n-g.mu)**2)/(2*g.s*g.s));}b[n]=v+noise*gauss();}return b;}
+function anomaly(p,type,sev){const o=clone(p);
+  if(type==='S'){o.P.mu-=14*sev;o.P.A*=1-1.7*sev;o.P.s*=1-0.25*sev;}
+  else if(type==='V'){o.P.A*=1-0.4*sev;o.R.s*=1+1.6*sev;o.R.A*=1-0.15*sev;o.Q.A*=1+1.5*sev;o.Q.s*=1+1.2*sev;o.Q.mu-=6*sev;o.S.A*=1+1.6*sev;o.S.s*=1+1.5*sev;o.S.mu+=8*sev;o.T.A*=1-0.5*sev;}
+  else if(type==='T'){o.T.A*=1-1.9*sev;o.T.s*=1+0.15*sev;}
+  return o;}
+function windows(p){const W={};for(const k of NAMES)W[k]=new Float64Array(L);
+  for(let n=0;n<L;n++){const e={};let mx=-1e9;for(const k of NAMES){const s=p[k].s*1.8+4;e[k]=-((n-p[k].mu)**2)/(2*s*s);if(e[k]>mx)mx=e[k];}
+    let z=0;for(const k of NAMES){e[k]=Math.exp(e[k]-mx);z+=e[k];}for(const k of NAMES)W[k][n]=e[k]/z;}
+  return W;}
+function median(a){const s=Array.from(a).sort((x,y)=>x-y);const m=s.length>>1;return s.length%2?s[m]:(s[m-1]+s[m])/2;}
+function pearson(a,b){const n=a.length;let ma=0,mb=0;for(let i=0;i<n;i++){ma+=a[i];mb+=b[i];}ma/=n;mb/=n;let num=0,da=0,db=0;for(let i=0;i<n;i++){const x=a[i]-ma,y=b[i]-mb;num+=x*y;da+=x*x;db+=y*y;}return num/Math.sqrt(da*db+1e-12);}
+function shiftArr(b,t){const o=new Float64Array(L);for(let n=0;n<L;n++){const j=n-t;o[n]=b[j<0?0:j>=L?L-1:j];}return o;}
+function align(b,t){let best=-2,bt=0;for(let s=-8;s<=8;s++){const r=pearson(shiftArr(b,s),t);if(r>best){best=r;bt=s;}}return {b:shiftArr(b,bt),shift:bt};}
+function scores(b,model){const t=model.t,W=model.W,out={};
+  for(const k of KS){let num=0,den=0;for(let n=0;n<L;n++){const w=k==='PQRST'?1:W[k][n];const bk=b[n]*w,tk=t[n]*w;num+=(bk-tk)**2;den+=bk*bk;}out[k]=num/(den+1e-8);}
+  return out;}
+function train(Ntr){const beats=[];for(let i=0;i<Ntr;i++)beats.push(synth(jitter(BASE)));
+  const t0=new Float64Array(L);for(let n=0;n<L;n++)t0[n]=median(beats.map(b=>b[n]));
+  const al=beats.map(b=>align(b,t0).b);
+  const t=new Float64Array(L);for(let n=0;n<L;n++)t[n]=median(al.map(b=>b[n]));
+  const model={t,W:windows(BASE),m:{},s:{}};const S=al.map(b=>scores(b,model));
+  for(const k of KS){const v=S.map(x=>x[k]);const m=v.reduce((a,c)=>a+c,0)/v.length;model.m[k]=m;model.s[k]=Math.sqrt(v.reduce((a,c)=>a+(c-m)**2,0)/(v.length-1));}
+  return model;}
+function evaluate(raw,model,c){const a=align(raw,model.t);const nse=scores(a.b,model);const z={};let flag=false;
+  for(const k of KS){z[k]=(nse[k]-model.m[k])/(model.s[k]+1e-8);if(z[k]>c)flag=true;}
+  let loc=null;if(flag){let mx=-1e9;for(const k of NAMES)if(z[k]>mx){mx=z[k];loc=k;}}
+  return {b:a.b,nse,z,flag,loc};}
+
+const MODEL=train(240);
+const NORMZ=[];for(let i=0;i<400;i++)NORMZ.push(evaluate(synth(jitter(BASE)),MODEL,99).z);
+
+/* ===================== Theme tokens ===================== */
+let C={};
+function readTokens(){const cs=getComputedStyle(document.documentElement);const g=n=>cs.getPropertyValue(n).trim();
+  C={ink:g('--ink'),ink2:g('--ink-2'),muted:g('--muted'),rule:g('--rule'),surface:g('--surface'),paper:g('--paper'),gmin:g('--grid-minor'),gmaj:g('--grid-major'),car:g('--carmine'),carSoft:g('--carmine-soft'),blue:g('--blue'),b:g('--series-b'),c:g('--series-c'),mono:g('--f-mono')};}
+readTokens();
+const mq=matchMedia('(prefers-color-scheme: dark)');
+function onTheme(){readTokens();renderCharts();drawBeat();}
+mq.addEventListener?.('change',onTheme);
+new MutationObserver(onTheme).observe(document.documentElement,{attributes:true,attributeFilter:['data-theme']});
+
+/* ===================== Live strip ===================== */
+const cv=document.getElementById('ecg'),ctx=cv.getContext('2d');
+const BUF=1<<14;const ring=new Float32Array(BUF);let written=0;let head=0;
+const notes=[];let nBeats=0,nFlag=0,msSum=0,msN=0;
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+let playing=!reduce;
+const live={rBeats:document.getElementById('rBeats'),rFlag:document.getElementById('rFlag'),rLast:document.getElementById('rLast'),rMs:document.getElementById('rMs')};
+const CLASSLBL={N:'N',S:'S',V:'V',T:'ST-T'};
+let sinceAbn=0;
+function genBeat(){
+  let type='N';sinceAbn++;
+  if(sinceAbn>3&&rnd()<0.17){type=['S','S','V','T'][Math.floor(rnd()*4)];sinceAbn=0;}
+  const sev=type==='N'?0:0.45+rnd()*0.45;
+  const p=type==='N'?jitter(BASE):anomaly(jitter(BASE),type,sev);
+  const w=synth(p);
+  const t0=performance.now();const r=evaluate(w,MODEL,3);const dt=performance.now()-t0;msSum+=dt;msN++;
+  let rr=type==='S'?Math.round(250+rnd()*20):type==='V'?Math.round(255+rnd()*20):Math.round(292+rnd()*36);
+  if(notes.length&&notes[notes.length-1].type!=='N'&&notes[notes.length-1].type!=='T'&&type==='N')rr+=40; // compensatory pause
+  const start=written;
+  for(let i=0;i<rr;i++){ring[(start+i)%BUF]=i<L?w[i]:(0.008*gauss());}
+  written+=rr;nBeats++;
+  if(r.flag)nFlag++;
+  notes.push({start,type,flag:r.flag,loc:r.loc});
+  if(notes.length>60)notes.shift();
+  if(r.flag&&type!=='N')live.rLast.textContent=CLASSLBL[type]+' → '+r.loc;
+  else if(r.flag)live.rLast.textContent='N → '+r.loc+' (false alarm)';
+  live.rBeats.textContent=nBeats.toLocaleString();live.rFlag.textContent=nFlag.toLocaleString();
+  live.rMs.textContent=(msSum/msN).toFixed(3)+' ms';
+}
+let W=0,H=0,dpr=1,mm=5;
+function sizeStrip(){dpr=Math.min(2,window.devicePixelRatio||1);const r=cv.getBoundingClientRect();W=r.width;H=r.height;cv.width=Math.round(W*dpr);cv.height=Math.round(H*dpr);ctx.setTransform(dpr,0,0,dpr,0,0);mm=W<600?4:5;drawStrip();}
+function drawStrip(){
+  ctx.fillStyle=C.surface;ctx.fillRect(0,0,W,H);
+  const pxs=25*mm/FS; // px per sample
+  const visible=Math.ceil(W/pxs);
+  const startS=head-visible;
+  // grid scrolls with the paper
+  const off=((startS*pxs)%mm+mm)%mm;
+  ctx.lineWidth=1;
+  for(let x=-off;x<W;x+=mm){const idx=Math.round((x+startS*pxs)/mm);ctx.strokeStyle=idx%5===0?C.gmaj:C.gmin;ctx.beginPath();ctx.moveTo(Math.round(x)+.5,0);ctx.lineTo(Math.round(x)+.5,H);ctx.stroke();}
+  const base=H*0.62;
+  for(let k=-20;k<20;k++){const y=base+k*mm;if(y<0||y>H)continue;ctx.strokeStyle=k%5===0?C.gmaj:C.gmin;ctx.beginPath();ctx.moveTo(0,Math.round(y)+.5);ctx.lineTo(W,Math.round(y)+.5);ctx.stroke();}
+  const ypx=10*mm; // px per mV
+  // annotations
+  ctx.font='500 11px '+C.mono;ctx.textAlign='center';
+  for(const n of notes){
+    const xR=(n.start+144-startS)*pxs; if(xR<-80||xR>W+80)continue;
+    if(n.flag&&n.loc){const g=BASE[n.loc];const half=Math.max(g.s*2.4,10);
+      const x0=(n.start+g.mu-half-startS)*pxs,x1=(n.start+g.mu+half-startS)*pxs;
+      ctx.fillStyle=C.carSoft;ctx.fillRect(x0,10,x1-x0,H-34);
+      ctx.fillStyle=C.car;ctx.fillRect(x0,10,1.5,H-34);
+      ctx.fillText(n.loc,(x0+x1)/2,24);}
+    ctx.fillStyle=n.type==='N'?C.muted:C.ink;ctx.fillText(CLASSLBL[n.type],xR,H-8);
+  }
+  // trace: min/max per pixel column
+  ctx.strokeStyle=C.ink;ctx.lineWidth=1.6;ctx.lineJoin='round';ctx.beginPath();
+  const per=1/pxs;let first=true;
+  for(let x=0;x<W;x++){const a=Math.floor(startS+x*per),b=Math.floor(startS+(x+1)*per);let mn=1e9,mx=-1e9;
+    for(let i=a;i<=b;i++){if(i<0||i>=written||i<written-BUF)continue;const v=ring[i%BUF];if(v<mn)mn=v;if(v>mx)mx=v;}
+    if(mn===1e9){mn=mx=0;}
+    const y1=base-mx*ypx,y2=base-mn*ypx;if(first){ctx.moveTo(x,y1);first=false;}else ctx.lineTo(x,y1);ctx.lineTo(x,y2);}
+  ctx.stroke();
+  // calibration pulse at left: 1 mV, 0.2 s
+  ctx.strokeStyle=C.ink2;ctx.lineWidth=1.2;ctx.beginPath();ctx.moveTo(6,base);ctx.lineTo(6,base-ypx);ctx.lineTo(6+5*mm,base-ypx);ctx.lineTo(6+5*mm,base);ctx.stroke();
+}
+// prefill a few seconds so the first frame shows a working monitor
+while(written<FS*5)genBeat();
+head=written-FS*0.4;
+let last=performance.now();
+function loop(now){const dt=Math.min(0.1,(now-last)/1000);last=now;
+  if(playing&&!document.hidden){head+=dt*FS;while(written<head+FS*1.2)genBeat();drawStrip();}
+  requestAnimationFrame(loop);}
+const playBtn=document.getElementById('playBtn'),strip=document.getElementById('strip');
+function setPlay(p){playing=p;playBtn.textContent=p?'Pause':'Play';playBtn.setAttribute('aria-pressed',String(!p));strip.classList.toggle('paused',!p);}
+playBtn.addEventListener('click',()=>setPlay(!playing));
+setPlay(playing);
+new ResizeObserver(sizeStrip).observe(cv);
+requestAnimationFrame(loop);
+
+/* ===================== Beat lab ===================== */
+const st={type:'S',sev:0.3,c:3,showG:false,base:null};
+st.base=jitter(BASE,0.6);
+const svg=document.getElementById('beatplot');const NS='http://www.w3.org/2000/svg';
+const PX0=46,PX1=628,PY0=12,PY1=246,VMIN=-0.9,VMAX=1.7;
+const sx=n=>PX0+(n/(L-1))*(PX1-PX0),sy=v=>PY0+(VMAX-v)/(VMAX-VMIN)*(PY1-PY0);
+function el(tag,attrs,parent){const e=document.createElementNS(NS,tag);for(const a in attrs)e.setAttribute(a,attrs[a]);(parent||svg).appendChild(e);return e;}
+function pathFrom(arr){let d='';for(let n=0;n<arr.length;n++)d+=(n?'L':'M')+sx(n).toFixed(1)+' '+sy(Math.max(VMIN,Math.min(VMAX,arr[n]))).toFixed(1);return d;}
+let current=null;
+function compute(){const p=st.type==='N'?clone(st.base):anomaly(st.base,st.type,st.sev);
+  const saved=rnd;rnd=mulberry(Math.round(st.sev*100)+st.type.charCodeAt(0)+seedBump);const raw=synth(p);rnd=saved;
+  current=evaluate(raw,MODEL,st.c);current.params=p;}
+let seedBump=1;
+function drawBeat(){if(!current)return;svg.textContent='';
+  el('rect',{x:PX0,y:PY0,width:PX1-PX0,height:PY1-PY0,fill:C.surface});
+  const mmX=(PX1-PX0)/(L/FS*1000/40); // 1 mm = 40 ms
+  for(let i=0;i*mmX<=PX1-PX0+0.1;i++){const x=PX0+i*mmX;el('line',{x1:x,x2:x,y1:PY0,y2:PY1,stroke:i%5===0?C.gmaj:C.gmin,'stroke-width':1});}
+  const mmY=(PY1-PY0)/((VMAX-VMIN)*10);
+  for(let v=-0.9;v<=1.7001;v+=0.1){const y=sy(v);const maj=Math.abs(Math.round(v*10)%5)===0;el('line',{x1:PX0,x2:PX1,y1:y,y2:y,stroke:maj?C.gmaj:C.gmin,'stroke-width':1});}
+  // y labels
+  for(const v of [-0.5,0,0.5,1,1.5]){const t=el('text',{x:PX0-8,y:sy(v)+4,'text-anchor':'end','font-size':11,'font-family':C.mono,fill:C.muted});t.textContent=v.toFixed(1);}
+  const ty=el('text',{x:12,y:(PY0+PY1)/2,'font-size':11,'font-family':C.mono,fill:C.muted,transform:`rotate(-90 12 ${(PY0+PY1)/2})`,'text-anchor':'middle'});ty.textContent='mV';
+  for(let ms=0;ms<=800;ms+=200){const n=ms/1000*FS;const t=el('text',{x:sx(Math.min(n,L-1)),y:PY1+16,'text-anchor':ms===0?'start':ms===800?'end':'middle','font-size':11,'font-family':C.mono,fill:C.muted});t.textContent=ms+' ms';}
+  // blamed window
+  if(current.loc){const w=MODEL.W[current.loc];let a=-1,b=-1;for(let n=0;n<L;n++){if(w[n]>0.5){if(a<0)a=n;b=n;}}
+    if(a>=0){el('rect',{x:sx(a),y:PY0,width:sx(b)-sx(a),height:PY1-PY0,fill:C.carSoft});el('line',{x1:sx(a),x2:sx(a),y1:PY0,y2:PY1,stroke:C.car,'stroke-width':1.5});
+      const t=el('text',{x:(sx(a)+sx(b))/2,y:PY0+16,'text-anchor':'middle','font-size':12,'font-weight':600,'font-family':C.mono,fill:C.car});t.textContent=current.loc+' window';}}
+  // gaussian components of the test beat
+  if(st.showG){const cols={P:C.blue,Q:C.b,R:C.car,S:C.b,T:C.blue};
+    for(const k of NAMES){const g=current.params[k];const arr=new Float64Array(L);for(let n=0;n<L;n++)arr[n]=g.A*Math.exp(-((n-g.mu)**2)/(2*g.s*g.s));
+      el('path',{d:pathFrom(arr)+`L${sx(L-1)} ${sy(0)}L${sx(0)} ${sy(0)}Z`,fill:cols[k],'fill-opacity':0.13,stroke:cols[k],'stroke-opacity':0.55,'stroke-width':1});
+      const t=el('text',{x:sx(g.mu),y:sy(g.A)+(g.A>=0?-6:14),'text-anchor':'middle','font-size':11,'font-family':C.mono,fill:C.ink2});t.textContent=k;}}
+  el('path',{d:pathFrom(MODEL.t),fill:'none',stroke:C.blue,'stroke-width':1.6,'stroke-dasharray':'5 4'});
+  el('path',{d:pathFrom(current.b),fill:'none',stroke:C.ink,'stroke-width':2,'stroke-linejoin':'round'});
+}
+const barsEl=document.getElementById('bars'),ticksEl=document.getElementById('ticks');
+const f=z=>Math.log10(1+Math.max(0,z))/Math.log10(1001);
+const ROWLBL={PQRST:'Full',P:'P',Q:'Q',R:'R',S:'S',T:'T'};
+const rows={};
+for(const k of KS){const r=document.createElement('div');r.className='bar';
+  r.innerHTML=`<span class="lbl">${ROWLBL[k]}${k==='PQRST'?' <small>beat</small>':''}</span><div class="track"><div class="fill"></div><div class="thr"></div></div><span class="z"></span>`;
+  barsEl.appendChild(r);rows[k]={fill:r.querySelector('.fill'),thr:r.querySelector('.thr'),z:r.querySelector('.z')};}
+for(const t of [0,3,10,100,1000]){const s=document.createElement('span');s.style.left=(f(t)*100)+'%';s.textContent=t;ticksEl.appendChild(s);}
+const fmtZ=z=>z>999?'>999':z<-9?'<−9':z.toFixed(1).replace('-','−');
+function setVerdict(id,flag,state,detail){const v=document.getElementById(id);v.className='verdict '+(flag?'flag':'pass');v.querySelector('.state').textContent=state;v.querySelector('.detail').textContent=detail;}
+function renderLab(){compute();drawBeat();
+  const z=current.z,c=st.c;
+  for(const k of KS){const r=rows[k];r.fill.style.width=(f(z[k])*100)+'%';r.fill.classList.toggle('over',z[k]>c);r.fill.classList.toggle('loc',k===current.loc);r.thr.style.left=`calc(${f(c)*100}% - 1px)`;r.z.textContent=fmtZ(z[k]);}
+  const gFlag=z.PQRST>c;
+  setVerdict('vGlobal',gFlag,gFlag?'Abnormal':'Passes as normal',`z = ${fmtZ(z.PQRST)} against threshold ${c.toFixed(1)}. No way to say which wave.`);
+  setVerdict('vLocal',current.flag,current.flag?'Abnormal · '+current.loc+' window':'Normal',current.flag?`Largest deviation in the ${current.loc} window (z = ${fmtZ(z[current.loc])}).`:`All six tests stay under threshold ${c.toFixed(1)}.`);
+  let fa=0;for(const zz of NORMZ){if(KS.some(k=>zz[k]>c))fa++;}
+  document.getElementById('fa').innerHTML=`<span>Simulated family-wise false-alarm rate at c = ${c.toFixed(1)}: <b class="num">${(100*fa/NORMZ.length).toFixed(1)}%</b> of 400 fresh normal beats.</span><span>Cantelli worst-case bound per test: ≤ <span class="num">${(100/(1+c*c)).toFixed(1)}%</span>, valid for any skewed distribution.</span>`;
+}
+const typeSeg=document.getElementById('typeSeg'),sev=document.getElementById('sev'),cMul=document.getElementById('cMul');
+function syncControls(){for(const b of typeSeg.querySelectorAll('button'))b.setAttribute('aria-pressed',String(b.dataset.t===st.type));
+  sev.disabled=st.type==='N';sev.value=st.sev;document.getElementById('sevOut').textContent=st.type==='N'?'n/a':Math.round(st.sev*100)+'%';
+  cMul.value=st.c;document.getElementById('cOut').textContent=st.c.toFixed(1);}
+typeSeg.addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;st.type=b.dataset.t;syncControls();renderLab();});
+sev.addEventListener('input',()=>{st.sev=+sev.value;syncControls();renderLab();});
+cMul.addEventListener('input',()=>{st.c=+cMul.value;syncControls();renderLab();});
+document.getElementById('showG').addEventListener('change',e=>{st.showG=e.target.checked;drawBeat();});
+document.getElementById('newBeat').addEventListener('click',()=>{st.base=jitter(BASE,0.8);seedBump++;renderLab();});
+document.querySelectorAll('[data-preset]').forEach(b=>b.addEventListener('click',()=>{const [t,s]=b.dataset.preset.split(',');st.type=t;st.sev=+s;st.c=t==='N'?1.5:3;syncControls();renderLab();}));
+syncControls();renderLab();
+
+/* ===================== Result charts ===================== */
+function groupedBars(host,cats,series,opts){
+  const Wd=360,Hd=200,l=34,r=8,t=14,b=28;const iw=Wd-l-r,ih=Hd-t-b;const max=opts.max;
+  let s=`<svg viewBox="0 0 ${Wd} ${Hd}" role="img" aria-label="${opts.label}">`;
+  for(const v of opts.ticks){const y=t+ih-(v/max)*ih;s+=`<line x1="${l}" x2="${Wd-r}" y1="${y}" y2="${y}" stroke="${C.rule}" stroke-width="1"/><text x="${l-6}" y="${y+4}" text-anchor="end" font-size="10" font-family="${C.mono}" fill="${C.muted}">${opts.fmt(v)}</text>`;}
+  const gw=iw/cats.length,bw=Math.min(26,(gw-18)/series.length);
+  cats.forEach((cat,i)=>{const gx=l+i*gw+(gw-bw*series.length-4*(series.length-1))/2;
+    series.forEach((se,j)=>{const v=se.v[i];const h=Math.max(1.5,(v/max)*ih);const x=gx+j*(bw+4),y=t+ih-h;
+      s+=`<rect x="${x}" y="${y}" width="${bw}" height="${h}" rx="2" fill="${se.c}"><title>${se.n} · ${cat}: ${opts.fmt2(v)}</title></rect>`;
+      s+=`<text x="${x+bw/2}" y="${y-4}" text-anchor="middle" font-size="9.5" font-family="${C.mono}" fill="${j===0?C.ink:C.muted}">${opts.fmt2(v)}</text>`;});
+    s+=`<text x="${l+i*gw+gw/2}" y="${Hd-8}" text-anchor="middle" font-size="11" font-family="${C.mono}" fill="${C.ink2}">${cat}</text>`;});
+  s+=`<line x1="${l}" x2="${Wd-r}" y1="${t+ih}" y2="${t+ih}" stroke="${C.ink2}" stroke-width="1"/></svg>`;
+  document.getElementById(host).innerHTML=s;}
+function latency(){const items=[['Gaussian template',0.01,C.car],['RBF SVM',1,C.c],['LSTM autoencoder',100,C.b]];
+  const Wd=360,Hd=200,l=118,r=48,t=18,b=34;const iw=Wd-l-r;const lx=v=>l+(Math.log10(v)+2.3)/(2+2.3+0.1)*iw;// domain 0.005..~125 ms
+  let s=`<svg viewBox="0 0 ${Wd} ${Hd}" role="img" aria-label="Latency per beat, log scale">`;
+  for(const v of [0.01,0.1,1,10,100]){const x=lx(v);s+=`<line x1="${x}" x2="${x}" y1="${t}" y2="${Hd-b}" stroke="${C.rule}"/><text x="${x}" y="${Hd-b+16}" text-anchor="middle" font-size="10" font-family="${C.mono}" fill="${C.muted}">${v}</text>`;}
+  s+=`<text x="${(l+Wd-r)/2}" y="${Hd-4}" text-anchor="middle" font-size="10" font-family="${C.mono}" fill="${C.muted}">ms per beat</text>`;
+  const bh=26,gap=(Hd-t-b-items.length*bh)/(items.length+1);
+  items.forEach(([n,v,c],i)=>{const y=t+gap+i*(bh+gap);const x0=lx(0.005);s+=`<text x="${l-8}" y="${y+bh/2+4}" text-anchor="end" font-size="11" fill="${C.ink2}" font-family="${C.mono}">${n}</text><rect x="${x0}" y="${y}" width="${lx(v)-x0}" height="${bh}" rx="2" fill="${c}"/><text x="${lx(v)+6}" y="${y+bh/2+4}" font-size="11" font-family="${C.mono}" fill="${C.ink}">≈${v}</text>`;});
+  s+=`</svg>`;document.getElementById('chLat').innerHTML=s;}
+function confusion(){const rowsC=['N','S','V'],cols=['P','Q','R','S','T'];const M=[[.10,.15,.25,.20,.30],[.42,.08,.28,.07,.15],[.05,.10,.45,.30,.10]];
+  const expected={S:['P','R'],V:['R','S']};
+  const Wd=360,Hd=200,l=40,t=30,r=6,b=26;const cw=(Wd-l-r)/5,ch=(Hd-t-b)/3;
+  let s=`<svg viewBox="0 0 ${Wd} ${Hd}" role="img" aria-label="Localization confusion matrix">`;
+  cols.forEach((c,j)=>{s+=`<text x="${l+j*cw+cw/2}" y="${t-10}" text-anchor="middle" font-size="11" font-family="${C.mono}" fill="${C.ink2}">${c}</text>`;});
+  rowsC.forEach((rw,i)=>{s+=`<text x="${l-10}" y="${t+i*ch+ch/2+4}" text-anchor="end" font-size="11" font-family="${C.mono}" fill="${C.ink2}">${rw}</text>`;
+    cols.forEach((c,j)=>{const v=M[i][j];const x=l+j*cw,y=t+i*ch;const exp=expected[rw]&&expected[rw].includes(c);
+      s+=`<rect x="${x+1.5}" y="${y+1.5}" width="${cw-3}" height="${ch-3}" rx="3" fill="${C.car}" fill-opacity="${(0.06+v*1.6).toFixed(2)}"${exp?` stroke="${C.ink}" stroke-width="1.5"`:''}/>`;
+      s+=`<text x="${x+cw/2}" y="${y+ch/2+4}" text-anchor="middle" font-size="12" font-family="${C.mono}" fill="${v>0.33?C.surface:C.ink}">${v.toFixed(2)}</text>`;});});
+  s+=`<text x="${l}" y="${Hd-6}" font-size="10" fill="${C.muted}" font-family="${C.mono}">rows: true class · outlined: expected region</text></svg>`;
+  document.getElementById('chConf').innerHTML=s;}
+function renderCharts(){
+  groupedBars('chSocc',['MITDB','EDB','SVDB'],[{n:'Gaussian template',c:C.car,v:[.98,.91,.47]},{n:'LSTM',c:C.b,v:[.67,.82,.01]},{n:'SVM',c:C.c,v:[.61,.05,.30]}],{max:1,ticks:[0,.25,.5,.75,1],fmt:v=>v.toFixed(2),fmt2:v=>v.toFixed(2),label:'F1 by dataset and method'});
+  groupedBars('chJbhi',['MITDB','EDB','SVDB'],[{n:'Proposed',c:C.car,v:[.68,.74,.79]},{n:'Baseline A',c:C.b,v:[.52,.55,.62]},{n:'Baseline B',c:C.c,v:[.60,.58,.40]}],{max:1,ticks:[0,.25,.5,.75,1],fmt:v=>v.toFixed(2),fmt2:v=>v.toFixed(2),label:'Macro-F1 by dataset and method'});
+  latency();confusion();}
+renderCharts();
+
+/* ===================== Publications ===================== */
+const PUBS=[
+ {y:2026,type:'manuscript',title:'Component-Local Energy Normalization for Classifier-Free Detection and Localization of Morphological Anomalies in ECG',authors:'A. Mousa and K. Elgazzar',venue:'Manuscript prepared for IEEE Journal of Biomedical and Health Informatics',note:'Journal manuscript',links:[['Research summary','#research']]},
+ {y:2026,type:'conference',title:'A Low-Latency Gaussian Template Framework for Real-Time ECG Anomaly Detection on Edge Devices',authors:'A. Mousa and K. Elgazzar',venue:'Proc. 2026 IEEE International System-on-Chip Conference (SOCC), to appear',note:'Conference · to appear',links:[['Interactive companion','https://ahmadammar972.github.io/A-Low-Latency-Gaussian-Template-Framework-for-Real-Time-ECG-Anomaly-Detection-on-Edge-Devices/']]},
+ {y:2023,type:'journal',title:'HAIS: Highways Automated-Inspection System',authors:'H. A. Gabbar, A. Chahid, M. U. Isham, S. Grover, K. P. Singh, K. Elgazzar, et al.',venue:'Technologies, vol. 11, no. 2, p. 51, 2023',note:'Journal'},
+ {y:2023,type:'conference',title:'Six Leads Are All You Need for Efficient Cardiac Analysis',authors:'A. Mousa and K. Elgazzar',venue:'2023 IEEE Global Conference on Artificial Intelligence and Internet of Things (GCAIoT)',note:'Conference'},
+ {y:2023,type:'conference',title:'Selective Lead Integration: Enhancing ECG Classification for Effective Cardiac Monitoring',authors:'A. Mousa and K. Elgazzar',venue:'2023 IEEE 9th World Forum on Internet of Things (WF-IoT), pp. 1–6',note:'Conference'},
+ {y:2023,type:'conference',title:'CardioDiverse: A Balanced ECG Dataset for Improved Association of Heart Diseases with Relevant Leads',authors:'A. Mousa and K. Elgazzar',venue:'2023 IEEE Global Conference on Artificial Intelligence and Internet of Things (GCAIoT)',note:'Conference'},
+ {y:2023,type:'thesis',title:'Optimizing Electrocardiogram Analysis for Efficient Heart Condition Diagnosis',authors:'A. Mousa',venue:'MASc Thesis, University of Ontario Institute of Technology (Canada), 2023',note:'Thesis'},
+ {y:2021,type:'journal',title:'A System for Blood Glucose Monitoring and Smart Insulin Prediction',authors:'Y. Obeidat and A. Ammar',venue:'IEEE Sensors Journal, vol. 21, no. 12, pp. 13895–13909, 2021',note:'Journal'}
+];
+const pubsEl=document.getElementById('pubs');
+const esc=s=>s.replace(/&/g,'&amp;').replace(/</g,'&lt;');
+const boldMe=a=>esc(a).replace(/(A\. Mousa|A\. Ammar)/g,'<b>$1</b>');
+const cite=p=>`${p.authors}, "${p.title}," ${p.venue}.`;
+function renderPubs(filter){pubsEl.textContent='';let n=0;
+  PUBS.forEach((p,i)=>{if(filter!=='all'&&p.type!==filter)return;n++;const li=document.createElement('li');li.className='pub';
+    const links=(p.links||[]).map(([t,u])=>`<a href="${u}"${u.startsWith('http')?' target="_blank" rel="noopener"':''}>${t}${u.startsWith('http')?' ↗':''}</a>`).join('');
+    const scholar=p.type==='manuscript'?'':`<a href="https://scholar.google.com/scholar?q=${encodeURIComponent('"'+p.title+'"')}" target="_blank" rel="noopener">Find on Google Scholar ↗</a>`;
+    li.innerHTML=`<span class="yr">${p.y}</span><div><div class="t">${esc(p.title)}</div><div class="a">${boldMe(p.authors)}</div><div class="v">${esc(p.venue)}</div>
+      <div class="meta"><span class="tag ${p.type==='manuscript'?'red':p.type==='journal'?'blue':''}">${p.note}</span>${links}${scholar}</div></div>
+      <div class="acts"><button class="icon-btn" type="button" data-cite="${i}">Copy citation</button></div>`;
+    pubsEl.appendChild(li);});
+  document.getElementById('pubCount').textContent=`Publications · ${n} ${n===1?'entry':'entries'}`;}
+renderPubs('all');
+document.getElementById('pubFilter').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;
+  for(const x of e.currentTarget.querySelectorAll('button'))x.setAttribute('aria-pressed',String(x===b));renderPubs(b.dataset.f);});
+
+/* ===================== Skills ===================== */
+const SKILLS=[
+ ['Biosignal processing and ML',['ECG analysis','Gaussian decomposition','Template matching','Anomaly detection','PyTorch','TensorFlow','Keras','scikit-learn','CNN · RNN · LSTM','Autoencoders','Time-series analysis','Feature engineering','Hypothesis testing']],
+ ['Embedded systems and IoT',['C++','Embedded Linux','Real-time processing','Raspberry Pi','MQTT','Kafka','AWS IoT Core','Azure IoT Hub','PCB design','Analog and mixed-signal circuits']],
+ ['Data engineering',['Apache Spark','PySpark','Spark SQL','Hadoop','Hive','Apache NiFi','Talend','Informatica','ETL pipelines']],
+ ['Databases',['PostgreSQL','MySQL','Oracle','MongoDB','Firebase','Advanced SQL']],
+ ['Languages and web',['Python','C++','C#','MATLAB','R','JavaScript','HTML · CSS','Flask','REST APIs','GraphQL']],
+ ['Cloud, DevOps and visualization',['AWS','GCP','Azure','Databricks','Docker','Kubernetes','Git · GitHub · GitLab','Tableau','Power BI','Plotly','Matplotlib · Seaborn','Leaflet']]
+];
+document.getElementById('skillGrid').innerHTML=SKILLS.map(([h,arr])=>`<div class="skill"><h4>${h}</h4><div class="chips">${arr.map(s=>`<span class="chip">${s}</span>`).join('')}</div></div>`).join('');
+
+/* ===================== Copy + toast ===================== */
+const toast=document.getElementById('toast');let tt;
+function showToast(m){toast.textContent=m;toast.hidden=false;clearTimeout(tt);tt=setTimeout(()=>toast.hidden=true,1800);}
+function copyText(text,node,msg){
+  const fallback=()=>{if(node){const r=document.createRange();r.selectNodeContents(node);const s=getSelection();s.removeAllRanges();s.addRange(r);showToast('Selected. Press Ctrl+C or ⌘C to copy');}};
+  try{navigator.clipboard.writeText(text).then(()=>showToast(msg),fallback);}catch(e){fallback();}}
+document.addEventListener('click',e=>{
+  const c=e.target.closest('[data-copy]');if(c){const n=document.getElementById(c.dataset.copy);copyText(n.textContent,n,'Copied');return;}
+  const ci=e.target.closest('[data-cite]');if(ci){const p=PUBS[+ci.dataset.cite];const node=ci.closest('.pub').querySelector('.t');copyText(cite(p),node,'Citation copied');}
+});
+
+/* ===================== Nav highlight ===================== */
+const links=[...document.querySelectorAll('.nav a')];
+const io=new IntersectionObserver(es=>{es.forEach(en=>{if(en.isIntersecting){links.forEach(a=>a.classList.toggle('on',a.getAttribute('href')==='#'+en.target.id));}});},{rootMargin:'-45% 0px -50% 0px'});
+['research','demo','publications','experience','skills','contact'].forEach(id=>io.observe(document.getElementById(id)));
+})();
+</script>
+
+</body></html>
